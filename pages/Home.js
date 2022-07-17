@@ -41,7 +41,7 @@ export default function Home() {
             <ServiceCards
               description="BUY A DEVICE"
               image="images/sell_smart/add_cart.png"
-              path="Sell_Device"
+              path="buy_device"
             />
             <ServiceCards
               description="REPAIR A DEVICE"
@@ -69,7 +69,7 @@ export default function Home() {
       {/* DESKTOP */}
 
       <main className="px-20 hidden lg:block ">
-        <div className="bg-my_bg_image mt-8 p-6 bg-contain bg-no-repeat">
+        <div className="bg-my_bg_image mt-8 p-6 bg-cover bg-no-repeat">
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-start space-y-4">
               <h1 className="font-bold text-[4rem]">sell your Device</h1>
@@ -99,9 +99,11 @@ export default function Home() {
                   all our gently used devices are certified and undergo a 90
                   point inspection test and are PhoneCheck certified!
                 </p>
-                <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
-                  Buy Now
-                </button>
+                <Link href="buy_device">
+                  <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
               <img
                 src="images/sell_smart/ipods.png"
@@ -110,8 +112,8 @@ export default function Home() {
               />
             </div>
 
-            <div className="pl-36 relative">
-              <div className="space-y-4">
+            <div className="pl-20 relative">
+              <div className="space-y-4 z-10">
                 <h1 className="font-bold text-[3rem]">buy your device </h1>
                 <p>
                   all our gently used devices are certified and undergo a 90
@@ -124,7 +126,7 @@ export default function Home() {
               <img
                 src="images/sell_smart/brokenLaptop.png"
                 alt=""
-                className="h-[200px] absolute right-0 -bottom-10"
+                className="h-[200px] absolute right-0 -bottom-10 z-0"
               />
             </div>
           </div>

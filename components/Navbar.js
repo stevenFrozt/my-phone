@@ -17,7 +17,7 @@ export default function Navbar() {
     <>
       {/* mobile */}
 
-      <div className="flex justify-between items-center px-4 py-4 border lg:hidden">
+      <div className="flex justify-between items-center px-4 py-4 border border-4 border-b-red-500 lg:hidden">
         <MenuAlt4Icon className="h-4" />
         <img src="images/logo.png" alt="" className="h-8" />
         <ShoppingCartIcon className="h-4 " />
@@ -45,7 +45,7 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <Link href="sell_device">
+          <Link href="buy_device">
             <a
               className={
                 router.pathname == "/buy_device" ? activeNavStyle : unActive

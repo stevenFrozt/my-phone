@@ -22,13 +22,13 @@ export default function Sell_Device() {
     <>
       <Navbar />
       {/* MOBILE */}
-      <main>
-        <div className="p-4 my-4 text-center">
-          <h1 className="font-bold">Select your device to get started</h1>
+      <main className="xl:px-20">
+        <div className="p-4 my-4 text-center font-medium lg:text-xl lg:my-8">
+          <h1 className="">Select your device to get started</h1>
           <h1>Sell your Device</h1>
         </div>
 
-        <div className="grid-cols-2 grid gap-4 px-4">
+        <div className="grid-cols-2 lg:grid-cols-4 grid gap-4 lg:gap-8 px-4">
           {devices.map((item, index) => (
             <DeviceThumbnail key={index} image={item.image} name={item.name} />
           ))}
