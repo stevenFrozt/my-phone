@@ -112,9 +112,9 @@ export default function Home() {
               />
             </div>
 
-            <div className="pl-20 relative">
+            <div className="pl-36 relative ">
               <div className="space-y-4 z-10">
-                <h1 className="font-bold text-[3rem]">buy your device </h1>
+                <h1 className="font-bold text-[3rem]">Repair your device </h1>
                 <p>
                   all our gently used devices are certified and undergo a 90
                   point inspection test and are PhoneCheck certified!

@@ -11,7 +11,7 @@ export default function Navbar() {
   const unActive = "h-24 pt-8 px-4 flex items-center mb-4  cursor-pointer"
 
   const router = useRouter()
-  console.log(router.pathname)
+  // console.log(router.pathname)
 
   return (
     <>
