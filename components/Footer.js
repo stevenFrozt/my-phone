@@ -46,7 +46,7 @@ export default function Footer() {
           alt=""
           className="h-12 clas mt-4 mb-8"
         />
-        <div className="flex space-x-4 items-center">
+        <div className="flex space-x-4 items-center text-center">
           <Link href="/">
             <a className="w-32">home</a>
           </Link>

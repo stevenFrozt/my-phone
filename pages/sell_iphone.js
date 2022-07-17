@@ -3,12 +3,12 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Device from "../components/Device"
 
-export default function ipone() {
+export default function sell_iphone() {
   const devices = [
     {
       name: "Iphone 13 Pro Max",
       image: "images/buy_smart/iphones/13 pro max only.png",
-      path: "",
+      path: "sell_details",
     },
     {
       name: "Iphone 13 Pro ",

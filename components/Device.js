@@ -2,8 +2,6 @@ import Link from "next/link"
 import React from "react"
 
 export default function Device({ image, name, path }) {
-  console.log("path", path)
-
   return (
     <Link href={path || ""}>
       <a>

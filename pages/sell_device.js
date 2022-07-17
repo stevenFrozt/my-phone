@@ -5,11 +5,14 @@ import Navbar from "../components/Navbar"
 
 export default function Sell_Device() {
   const devices = [
-    { name: "Iphone", image: "/images/sell_smart/IPHONE XS.png" },
+    {
+      name: "Iphone",
+      image: "/images/sell_smart/IPHONE XS.png",
+      path: "sell_iphone",
+    },
     { name: "samsung", image: "/images/sell_smart/SAMSUNG GALAXY .png" },
     { name: "smart watch", image: "/images/sell_smart/APPLE WATCH SER.png" },
     { name: "airpods", image: "/images/sell_smart/AIRPODS PROS.png" },
-    { name: "airpods", image: "/images/sell_smart/IPHONE XS.png" },
     { name: "ipade", image: "/images/sell_smart/ipad pro 12.9 4.png" },
     { name: "Macbook", image: "/images/sell_smart/macbook-air-201.png" },
     { name: "consol", image: "/images/sell_smart/NINTENDO SWITCH.png" },
@@ -30,7 +33,12 @@ export default function Sell_Device() {
 
         <div className="grid-cols-2 lg:grid-cols-4 grid gap-4 lg:gap-8 px-4">
           {devices.map((item, index) => (
-            <DeviceThumbnail key={index} image={item.image} name={item.name} />
+            <DeviceThumbnail
+              key={index}
+              image={item.image}
+              name={item.name}
+              path={item.path}
+            />
           ))}
         </div>
       </main>
