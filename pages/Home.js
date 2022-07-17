@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
@@ -6,7 +7,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-8 px-4">
+
+      {/* MOBILE */}
+      <main className="pt-8 px-4 lg:hidden">
         {/* title and description */}
         <div className="pb-6">
           <h1 className="font-bold">Sell, Buy or Repair a device</h1>
@@ -15,37 +18,119 @@ export default function Home() {
           </p>
         </div>
         {/* landing pic and button */}
-        <div className="flex justify-between px-4">
+        <div className="flex justify-around md:justify-center px-4">
           <button className="bg-red-500 text-white h-7 p-2 flex items-center rounded mt-4">
             let's go
           </button>
-          <img src="images/landing.png" alt="" className="h-28" />
+          <img
+            src="images/sell_smart/landing.png"
+            alt=""
+            className="h-28 md:h-36"
+          />
         </div>
+
         {/* services cards */}
-        <div className="py-2">
-          <h1>choose</h1>
-          <h1>your sevice</h1>
-          <div className="flex space-x-2 py-4 items-end">
+        <div className="py-2 md:my-8">
+          <h1 className="p-4 font-bold">Choose your Service</h1>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-2">
             <ServiceCards
               description="SELL A DEVICE"
-              image="images/trading.png"
-              isActive={true}
+              image="images/sell_smart/trading.png"
+              path="sell_device"
             />
             <ServiceCards
               description="BUY A DEVICE"
-              image="images/add_cart.png"
-              isActive={false}
+              image="images/sell_smart/add_cart.png"
+              path="Sell_Device"
             />
             <ServiceCards
               description="REPAIR A DEVICE"
-              image="images/repair.png"
-              isActive={false}
+              image="images/sell_smart/repair.png"
+              path="Sell_Device"
             />
+            <ServiceCards
+              description="Test A DEVICE"
+              image="images/sell_smart/repair.png"
+              path="Sell_Device"
+            />
+            {/* <div className="bg-red-500">test</div>
+            <div className="bg-red-500">test</div>
+            <div className="bg-red-500">test</div>
+            <div className="bg-red-500">test</div> */}
           </div>
-
-          <img src="images/group_device.png" alt="" />
+          <img
+            src="images/sell_smart/group_device.png"
+            alt=""
+            className="w-full md:w-[300px] md:mx-auto mt-8 mb-2"
+          />
         </div>
       </main>
+
+      {/* DESKTOP */}
+
+      <main className="px-20 hidden lg:block ">
+        <div className="bg-my_bg_image mt-8 p-6 bg-contain bg-no-repeat">
+          <div className="flex items-center justify-center">
+            <div className="flex flex-col items-start space-y-4">
+              <h1 className="font-bold text-[4rem]">sell your Device</h1>
+              <p>
+                we make it convenient to get the most for your old tech, test
+                your device from home before selling it to know what it’s worth
+              </p>
+              <Link href="sell_device">
+                <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
+                  Sell Now
+                </button>
+              </Link>
+            </div>
+            <img
+              src="images/sell_smart/CompositeLayer.png"
+              alt=""
+              className="h-[400px]"
+            />
+          </div>
+          <div className="grid grid-cols-2 ">
+            <div className="flex ">
+              {/* buy your device */}
+
+              <div className="space-y-4">
+                <h1 className="font-bold text-[3rem]">buy your device </h1>
+                <p>
+                  all our gently used devices are certified and undergo a 90
+                  point inspection test and are PhoneCheck certified!
+                </p>
+                <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
+                  Buy Now
+                </button>
+              </div>
+              <img
+                src="images/sell_smart/ipods.png"
+                alt=""
+                className="h-[300px]"
+              />
+            </div>
+
+            <div className="pl-36 relative">
+              <div className="space-y-4">
+                <h1 className="font-bold text-[3rem]">buy your device </h1>
+                <p>
+                  all our gently used devices are certified and undergo a 90
+                  point inspection test and are PhoneCheck certified!
+                </p>
+                <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
+                  Buy Now
+                </button>
+              </div>
+              <img
+                src="images/sell_smart/brokenLaptop.png"
+                alt=""
+                className="h-[200px] absolute right-0 -bottom-10"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
     </>
   )
 }
