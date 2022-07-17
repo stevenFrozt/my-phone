@@ -8,7 +8,7 @@ export default function ipone() {
     {
       name: "Iphone 13 Pro Max",
       image: "images/buy_smart/iphones/13 pro max only.png",
-      path: "",
+      path: "buy_product",
     },
     {
       name: "Iphone 13 Pro ",
