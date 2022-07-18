@@ -67,7 +67,7 @@ export default function ipone() {
     { name: "Iphone 6  ", image: "images/buy_smart/iphones/", path: "" },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <div className="grid grid-cols-2 lg:grid-cols-4 lg:px-40 py-10 ">
         {devices.map((item, index) => (
@@ -81,6 +81,6 @@ export default function ipone() {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
