@@ -19,17 +19,6 @@ export default function index() {
               Sell, Buy or Repair iphones, tablets , ipods and more
             </p>
           </div>
-          {/* landing pic and button */}
-          <div className="flex justify-around md:justify-center px-4">
-            <button className="bg-red-500 text-white h-7 p-2 flex items-center rounded mt-4">
-              let&apos;s go
-            </button>
-            <img
-              src="images/sell_smart/landing.png"
-              alt=""
-              className="h-28 md:h-36"
-            />
-          </div>
 
           {/* services cards */}
           <div className="py-2 md:my-8">
