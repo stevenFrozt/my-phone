@@ -28,7 +28,7 @@ export default function index() {
               <ServiceCards description="BUY A DEVICE" path="buy_device" />
               <ServiceCards description="REPAIR A DEVICE" path="Sell_Device" />
               <ServiceCards description="Test A DEVICE" path="Sell_Device" />
-              test
+
               {/* <div className="bg-red-500">test</div>
             <div className="bg-red-500">test</div>
             <div className="bg-red-500">test</div>
