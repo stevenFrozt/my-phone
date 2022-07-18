@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <>
       {/* MOBILE */}
-      <div className="text-center py-8">
-        <div className=" lg:hidden flex flex-col justify-center items-center border-t pt-8 border-black max-w-[280px] mx-auto mt-2 space-y-4">
+      <div className="text-center py-8 dark:bg-gray-900" >
+        <div className=" lg:hidden flex flex-col justify-center items-center border-t pt-8 border-black dark:border-white max-w-[280px] mx-auto mt-2 space-y-4">
           <img src="images/logo.png" alt="" className="h-6" />
           <Link href="/">
             <a className="w-32">home</a>
@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
 
       {/* DESKTOP */}
-      <div className=" hidden lg:flex flex-col justify-center items-center border-t pt-8 max-w-[1400px] mx-auto mt-8">
+      <div className=" hidden lg:flex flex-col justify-center items-center border-t pt-8 max-w-[1400px] mx-auto mt-8 dark:bg-gray-900">
         <img
           src="images/sell_smart/logoFooter.png"
           alt=""
