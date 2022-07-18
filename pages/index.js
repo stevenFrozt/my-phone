@@ -3,7 +3,6 @@ import React from "react"
 import Footer from "../components/Footer.js"
 import Navbar from "../components/Navbar.js"
 import ServiceCards from "../components/ServiceCards.js"
-import Home from "./home.js"
 
 export default function index() {
   return (
