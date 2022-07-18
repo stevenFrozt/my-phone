@@ -6,7 +6,7 @@ import { HiOutlineTrash } from "react-icons/hi"
 
 export default function profile() {
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <main className="py-6 px-4 lg:border lg:w-[70%] lg:mx-auto lg:px-20 lg:rounded lg:my-8 lg:pb-20">
         <div>
@@ -36,7 +36,7 @@ export default function profile() {
                   className="py-4 space-y-6 lg:space-x-4 lg:grid lg:grid-cols-2 items-center"
                 >
                   <div className="flex flex-col lg:mt-[24px] lg:ml-[16px]">
-                    <label htmlFor="name">name</label>
+                    <label htmlFor="name" className="dark:text-black">name</label>
                     <input
                       type="text"
                       placeholder="hisham hosam alkhlout"
@@ -44,7 +44,7 @@ export default function profile() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label htmlFor="phone">phone number</label>
+                    <label htmlFor="phone" className="dark:text-black">phone number</label>
                     <input
                       type="text"
                       placeholder="0912471338757"
@@ -52,7 +52,7 @@ export default function profile() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label htmlFor="email">email</label>
+                    <label htmlFor="email" className="dark:text-black">email</label>
                     <input
                       type="text"
                       placeholder="Hishamhosam @Gmail.Com"
@@ -60,7 +60,7 @@ export default function profile() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label htmlFor="street">street address</label>
+                    <label htmlFor="street" className="dark:text-black">street address</label>
                     <input
                       type="text"
                       placeholder="bgy remal seterr"
@@ -68,7 +68,7 @@ export default function profile() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label htmlFor="birthday">birthday</label>
+                    <label htmlFor="birthday" className="dark:text-black">birthday</label>
                     <input
                       type="text"
                       placeholder="16/11/22022"
@@ -76,7 +76,7 @@ export default function profile() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label htmlFor="gender">gender</label>
+                    <label htmlFor="gender" className="dark:text-black">gender</label>
                     <input
                       type="text"
                       placeholder="male"
@@ -84,7 +84,7 @@ export default function profile() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label htmlFor="state/city">state/city</label>
+                    <label htmlFor="state/city" className="dark:text-black">state/city</label>
                     <input
                       type="text"
                       placeholder="male"
@@ -106,9 +106,9 @@ export default function profile() {
                 <h1 className="font-medium">Payment Type:</h1>
                 <div className="bg-gray-200 w-[90%] mx-auto p-4 rounded my-4 space-y-4">
                   <img src="images/sell_smart/checkout/visa.png" alt="" />
-                  <h1 className="truncate">hishamhosam20@gmail.com</h1>
+                  <h1 className="truncate dark:text-black">hishamhosam20@gmail.com</h1>
                   <div className="flex justify-end ">
-                    <div className="flex ">
+                    <div className="flex dark:text-black">
                       <TbEdit className="text-lg mr-2" />
                       <HiOutlineTrash className="text-lg mr-2" />
                     </div>
@@ -130,7 +130,7 @@ export default function profile() {
                   <input
                     type="text"
                     placeholder="hisham remall street plasitine 990123"
-                    className="border-b w-full"
+                    className="border-b w-full px-4"
                   />
                   <div className="flex justify-between items-center py-2">
                     <h1 className="text-blue-500 text-sm">

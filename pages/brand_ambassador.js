@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 
 export default function brand_ambassador() {
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <main className="px-4 lg:border lg:p-10 lg:mx-20 lg:my-20">
         <h1 className="font-bold">Brand Ambassador</h1>
@@ -22,7 +22,7 @@ export default function brand_ambassador() {
             Ambassador And Will Be Eligible To Earn More Money.
           </p>
           <p>
-            3. When You Become A Brand Ambassador, We'll Give You An Extra $10
+            3. When You Become A Brand Ambassador, We&apos;ll Give You An Extra $10
             Reward.
           </p>
         </div>

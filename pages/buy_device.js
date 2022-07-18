@@ -52,7 +52,7 @@ export default function Sell_Device() {
     },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <Navbar />
       {/* MOBILE */}
       <main className="xl:px-20">
@@ -73,6 +73,6 @@ export default function Sell_Device() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

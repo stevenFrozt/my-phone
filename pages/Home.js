@@ -33,7 +33,7 @@ export default function Home() {
         {/* services cards */}
         <div className="py-2 md:my-8">
           <h1 className="p-4 font-bold">Choose your Service</h1>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:gird-cols-2 gap-2">
             <ServiceCards
               description="SELL A DEVICE"
               image="images/sell_smart/trading.png"

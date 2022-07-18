@@ -5,7 +5,7 @@ import { MdContentCopy } from "react-icons/md"
 
 export default function commission() {
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <main className="text-sm lg:text-lg px-4 py-4 lg:border lg:m-20 lg:px-10 lg:py-5">
         <h1 className="py-4 font-medium">My Commission</h1>
@@ -13,21 +13,21 @@ export default function commission() {
         <div className="py-4">
           <h3 className="py-2">Referral Commission</h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-10 lg:w-[60%] ">
-            <div className="bg-red-100 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
+            <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Total commission</p>
-              <h1 className="text-red-500 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
             </div>
-            <div className="bg-red-100 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
+            <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Available commission</p>
-              <h1 className="text-red-500 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
             </div>
-            <div className="bg-red-100 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
+            <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Pending commission</p>
-              <h1 className="text-red-500 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
             </div>
-            <div className="bg-red-100 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
+            <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Used commission</p>
-              <h1 className="text-red-500 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
             </div>
           </div>
         </div>
@@ -35,22 +35,22 @@ export default function commission() {
         <div className="pb-4">
           <h3 className="py-2">Commission Composition</h3>
           <div className="grid grid-cols-2 gap-2 lg:w-[60%] lg:gap-10">
-            <div className="bg-red-100 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
+            <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg lg:text-[1.5rem]">
                 Individual Invite Center
               </p>
-              <h1 className="text-red-500 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
             </div>
-            <div className="bg-red-100 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
+            <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg lg:text-[1.5rem]">
                 Brand Ambassador
               </p>
-              <h1 className="text-red-500 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
             </div>
           </div>
         </div>
 
-        <div className="bg-red-100 text-center space-y-4 py-4 my-4 lg:text-left lg:p-4 lg:w-[60%] rounded">
+        <div className="bg-red-100 dark:bg-gray-600 text-center space-y-4 py-4 my-4 lg:text-left lg:p-4 lg:w-[60%] rounded">
           <p>
             Invite 2 Friends to complete their orders on my phone, then you can
             become a brand ambassador! you can earn unlimited commission!{" "}

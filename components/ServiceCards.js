@@ -10,7 +10,7 @@ export default function ServiceCards({ image, description, path }) {
           }
         >
           <img src={image} alt="" className="h-8 mb-4" />
-          <h3 className="text-center">{description}</h3>
+          <h3 className="text-center dark:text-black">{description}</h3>
         </div>
       </a>
     </Link>

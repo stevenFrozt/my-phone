@@ -22,10 +22,10 @@ export default function Sell_Device() {
     },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <Navbar />
       {/* MOBILE */}
-      <main className="lg:px-20 dark:bg-gray-900">
+      <main className="lg:px-20 ">
         <div className="p-4 py-6 text-center font-medium lg:text-xl lg:my-8">
           <h1 className="">Select your device to get started</h1>
           <h1>Sell your Device</h1>
@@ -43,6 +43,6 @@ export default function Sell_Device() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
