@@ -76,7 +76,8 @@ export default function Home() {
               <h1 className="font-bold text-[4rem]">sell your Device</h1>
               <p>
                 we make it convenient to get the most for your old tech, test
-                your device from home before selling it to know what it&apos;s worth
+                your device from home before selling it to know what it&apos;s
+                worth
               </p>
               <Link href="sell_device">
                 <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
