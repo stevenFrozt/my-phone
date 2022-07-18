@@ -8,7 +8,7 @@ export default function repair_iphone() {
     {
       name: "Iphone 13 Pro Max",
       image: "images/buy_smart/iphones/13 pro max only.png",
-      path: "buy_product",
+      path: "repair_type",
     },
     {
       name: "Iphone 13 Pro ",

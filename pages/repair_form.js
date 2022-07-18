@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import Link from "next/link"
+
 export default function repair_form() {
   return (
     <>
@@ -40,9 +42,11 @@ export default function repair_form() {
                    </div>
                     
                     <div className="mt-10 flex flex-col items-center">
-                        <div className="flex items-center justify-center w-full h-10 bg-[#d42828] rounded-sm mb-4 ">
-                            <h1 className="text-center text-white">Get free estimate</h1>
-                        </div>
+                        <Link href="repair_location">
+                            <div className="cursor-pointer flex items-center justify-center w-full h-10 bg-[#d42828] rounded-sm mb-4 ">
+                                    <a className="text-center text-white">Get free estimate</a>
+                            </div>
+                        </Link>
 
                         <h1 className="font-normal text-xs">* By Submitting this estimate form I understand I may receive an email, text or phone call regarding  my repair estimate. You can unsubscribe at any time.</h1>
                     </div>
