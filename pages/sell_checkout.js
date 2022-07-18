@@ -7,7 +7,7 @@ export default function Sell_checkout() {
   const activeNav = "border-b-2 border-blue-500 cursor-pointer"
   const unActiveNav = "text-gray-400 cursor-pointer"
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <main>
         <div className="lg:border rounded-lg mx-8 lg:mx-20 my-16">
@@ -35,7 +35,7 @@ export default function Sell_checkout() {
           {/* cart */}
           {active == "cart" ? (
             <>
-              <div className="flex justify-center text-sm px-2">
+              <div className="flex justify-center text-sm px-2 ">
                 <table className="my-4  w-full">
                   <thead className="text-center ">
                     <tr className="">

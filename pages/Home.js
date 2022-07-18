@@ -3,13 +3,14 @@ import React from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import ServiceCards from "../components/ServiceCards"
+
 export default function Home() {
   return (
     <>
       <Navbar />
 
       {/* MOBILE */}
-      <main className="pt-8 px-4 lg:hidden">
+      <main className="pt-8 px-4 lg:hidden dark:bg-gray-900">
         {/* title and description */}
         <div className="pb-6">
           <h1 className="font-bold">Sell, Buy or Repair a device</h1>
@@ -20,7 +21,7 @@ export default function Home() {
         {/* landing pic and button */}
         <div className="flex justify-around md:justify-center px-4">
           <button className="bg-red-500 text-white h-7 p-2 flex items-center rounded mt-4">
-            let's go
+            let&apos;s go
           </button>
           <img
             src="images/sell_smart/landing.png"
@@ -32,7 +33,7 @@ export default function Home() {
         {/* services cards */}
         <div className="py-2 md:my-8">
           <h1 className="p-4 font-bold">Choose your Service</h1>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2">
             <ServiceCards
               description="SELL A DEVICE"
               image="images/sell_smart/trading.png"
@@ -68,14 +69,14 @@ export default function Home() {
 
       {/* DESKTOP */}
 
-      <main className="px-20 hidden lg:block ">
+      <main className="px-20 hidden lg:block dark:bg-gray-900">
         <div className="bg-my_bg_image mt-8 p-6 bg-cover bg-no-repeat">
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-start space-y-4">
               <h1 className="font-bold text-[4rem]">sell your Device</h1>
               <p>
                 we make it convenient to get the most for your old tech, test
-                your device from home before selling it to know what it’s worth
+                your device from home before selling it to know what it&apos;s worth
               </p>
               <Link href="sell_device">
                 <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">

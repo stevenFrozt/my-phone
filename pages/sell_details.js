@@ -8,7 +8,7 @@ export default function sell_details() {
   return (
     <div>
       <Navbar />
-      <main className="lg:flex lg:items-center lg:flex-row-reverse lg:justify-around">
+      <main className="lg:flex lg:items-center lg:flex-row-reverse lg:justify-around dark:bg-gray-900">
         <div className="flex flex-col items-center py-4 lg:scale-150 lg:mt-40 lg:self-start">
           <img
             src="images/sell_smart/IPHONE XS MAX.png"
@@ -51,7 +51,7 @@ export default function sell_details() {
             </div>
           </div>
           <div className="pt-4">
-            <h3 className="py-2">PHONE STATUS</h3>
+            <h3 className="py-2 truncate">PHONE STATUS</h3>
             <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-4">
               <GradientButton text="NO LOCKS" />
               <GradientButton text="FINANCED" />
@@ -82,7 +82,7 @@ export default function sell_details() {
           </div>
           <div className="flex justify-center lg:justify-start py-8 mt-8">
             <Link href="sell_checkout">
-              <button className="bg-red-500 px-8 py-2 rounded text-center text-lg text-white lg:text-[1.2rem] lg:px-20 lg:py-4 lg:my-10">
+              <button className="bg-red-500 px-8 py-2 rounded text-center text-lg text-white lg:text-[1.2rem] lg:px-20 lg:py-4 lg:my-10" >
                 Checkout
               </button>
             </Link>
