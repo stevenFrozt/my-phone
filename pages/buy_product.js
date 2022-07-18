@@ -103,7 +103,7 @@ export default function buy_product() {
     },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <main className="xl:px-20">
         <div className="p-4 my-4 font-medium lg:text-xl lg:my-8">
@@ -166,6 +166,6 @@ export default function buy_product() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

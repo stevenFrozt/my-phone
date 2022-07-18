@@ -9,7 +9,7 @@ export default function Cart() {
   const activeNav = "border-b-2 border-blue-500 cursor-pointer py-2 text-center"
   const unActiveNav = "text-gray-400 cursor-pointer py-2 text-center"
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Navbar />
       <main>
         <div>
