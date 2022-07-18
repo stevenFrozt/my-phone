@@ -19,42 +19,16 @@ export default function index() {
               Sell, Buy or Repair iphones, tablets , ipods and more
             </p>
           </div>
-          {/* landing pic and button */}
-          <div className="flex justify-around md:justify-center px-4">
-            <button className="bg-red-500 text-white h-7 p-2 flex items-center rounded mt-4">
-              let&apos;s go
-            </button>
-            <img
-              src="images/sell_smart/landing.png"
-              alt=""
-              className="h-28 md:h-36"
-            />
-          </div>
 
           {/* services cards */}
           <div className="py-2 md:my-8">
             <h1 className="p-4 font-bold">Choose your Service</h1>
             <div className="grid grid-cols-1 md:gird-cols-2 gap-2">
-              <ServiceCards
-                description="SELL A DEVICE"
-                image="images/sell_smart/trading.png"
-                path="sell_device"
-              />
-              <ServiceCards
-                description="BUY A DEVICE"
-                image="images/sell_smart/add_cart.png"
-                path="buy_device"
-              />
-              <ServiceCards
-                description="REPAIR A DEVICE"
-                image="images/sell_smart/repair.png"
-                path="Sell_Device"
-              />
-              <ServiceCards
-                description="Test A DEVICE"
-                image="images/sell_smart/repair.png"
-                path="Sell_Device"
-              />
+              <ServiceCards description="SELL A DEVICE" path="sell_device" />
+              <ServiceCards description="BUY A DEVICE" path="buy_device" />
+              <ServiceCards description="REPAIR A DEVICE" path="Sell_Device" />
+              <ServiceCards description="Test A DEVICE" path="Sell_Device" />
+              test
               {/* <div className="bg-red-500">test</div>
             <div className="bg-red-500">test</div>
             <div className="bg-red-500">test</div>
