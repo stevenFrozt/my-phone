@@ -6,7 +6,7 @@ export default function customer_service() {
     <>
         <Navbar/>
         <main className="xl:px-20">
-        <div className="p-4 my-4 font-medium lg:text-xl lg:my-8 xl:border-2 xl:rounded-xl">
+        <div className="p-4 my-4 font-medium lg:text-xl lg:my-8 lg:border-2 lg:rounded-lg">
           <h1 className='text-xl mb-3'>Customer Service</h1>
           
           <div className="font-normal">
