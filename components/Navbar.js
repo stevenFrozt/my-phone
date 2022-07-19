@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import { ShoppingCartIcon, MenuAlt4Icon } from "@heroicons/react/outline"
 import { FaRegUser, FaSearch } from "react-icons/fa"
@@ -12,7 +12,9 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme()
 
   const [toggleMenu, setToggleMenu] = useState(false)
-
+  useEffect(() => {
+    setTheme("light")
+  }, [])
   const activeNavStyle =
     "border h-24 pt-8 px-4 flex items-center mb-4 bg-red-500 cursor-pointer rounded-xl text-white"
   const unActive = "h-24 pt-8 px-4 flex items-center mb-4  cursor-pointer"
