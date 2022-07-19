@@ -22,8 +22,8 @@ export default function brand_ambassador() {
             Ambassador And Will Be Eligible To Earn More Money.
           </p>
           <p>
-            3. When You Become A Brand Ambassador, We&apos;ll Give You An Extra $10
-            Reward.
+            3. When You Become A Brand Ambassador, We&apos;ll Give You An Extra
+            $10 Reward.
           </p>
         </div>
 
@@ -34,16 +34,17 @@ export default function brand_ambassador() {
             <h1>Your progress: 100%</h1>
           </div>
           {/*MOBILE progress bar 20% , 55% , 100% */}
-          {/*MOBILE progress bar 17.5%% , 51.5% , 100% */}
-          <div className="z-0 bg-white w-full h-5 rounded-xl overflow-hidden flex justify-around relative  before:absolute before:content-[''] before:bg-gray-400 before:w-[20%] lg:before:w-[17.5%] before:h-5 before:-left-2 before:z-0 ">
+          {/*Tablet progress bar 18.5% , 52.5% , 100% */}
+          {/*Desktop progress bar 17.5%% , 51.5% , 100% */}
+          <div className="z-0 bg-white w-full h-5 rounded-xl overflow-hidden flex justify-around relative  before:absolute before:content-[''] before:bg-gray-400 before:w-[20%] lg:before:w-[17.5%] md:before:w-[18.5%] before:h-5 before:-left-2 before:z-0 ">
             <div className="h-full w-5 rounded-full bg-gray-600 z-10"></div>
             <div className="h-full w-5 rounded-full bg-gray-600 z-10"></div>
             <div></div>
             <div className="h-full w-5 rounded-full bg-gray-600 z-10 absolute right-0"></div>
           </div>
-          <div className="flex justify-between text-[.6rem] py-2">
-            <h1>Registered successfully</h1>
-            <h1>Invite 1 Friends</h1>
+          <div className="flex justify-between text-[.6rem] lg:text-base py-2">
+            <h1 className="lg:pl-36">Registered successfully</h1>
+            <h1 className="lg:pr-40">Invite 1 Friends</h1>
             <h1>Invite 2 Friends</h1>
           </div>
 

@@ -15,19 +15,27 @@ export default function commission() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-10 lg:w-[60%] ">
             <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Total commission</p>
-              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">
+                $000.0
+              </h1>
             </div>
             <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Available commission</p>
-              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">
+                $000.0
+              </h1>
             </div>
             <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Pending commission</p>
-              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">
+                $000.0
+              </h1>
             </div>
             <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg">Used commission</p>
-              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">
+                $000.0
+              </h1>
             </div>
           </div>
         </div>
@@ -39,13 +47,17 @@ export default function commission() {
               <p className="text-[.5rem] lg:text-lg lg:text-[1.5rem]">
                 Individual Invite Center
               </p>
-              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">
+                $000.0
+              </h1>
             </div>
             <div className="bg-red-100 dark:bg-gray-600 rounded-lg text-center lg:py-8 lg:px-1 lg:space-y-4 p-2">
               <p className="text-[.5rem] lg:text-lg lg:text-[1.5rem]">
                 Brand Ambassador
               </p>
-              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">$000.0</h1>
+              <h1 className="text-red-500 dark:text-blue-400 text-lg lg:text-[1.5rem]">
+                $000.0
+              </h1>
             </div>
           </div>
         </div>
@@ -69,7 +81,7 @@ export default function commission() {
             <p className="text-[.8rem]">
               Check Your Coupons And Use Them As Soon As Possible.
             </p>
-            <nav className="flex justify-around my-8">
+            <nav className="flex justify-around my-8 lg:mx-40">
               <h1 className="border-b-2 border-blue-500 text-center">
                 Coupon Avilable
               </h1>{" "}
