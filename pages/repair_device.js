@@ -52,7 +52,7 @@ export default function repair_device() {
     },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900/100">
       <Navbar />
       {/* MOBILE */}
       <main className="xl:px-20">
@@ -73,6 +73,6 @@ export default function repair_device() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
