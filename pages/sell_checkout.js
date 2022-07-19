@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 
 export default function Sell_checkout() {
   const [active, setActive] = useState("cart")
+  const [quantity, setQuantiity] = useState(1)
   const activeNav = "border-b-2 border-blue-500 cursor-pointer"
   const unActiveNav = "text-gray-400 cursor-pointer"
   return (
@@ -82,11 +83,17 @@ export default function Sell_checkout() {
                       </td>
                       <td>$31.00</td>
                       <td className="text-center flex items-baseline justify-center pt-14 mx-2">
-                        <button className="bg-gray-500 px-4 rounded text-lg text-white ">
+                        <button
+                          className="bg-gray-500 px-4 rounded text-lg text-white "
+                          onClick={() => setQuantiity((prev) => prev - 1)}
+                        >
                           -
                         </button>
-                        <h1 className="p-4">2</h1>
-                        <button className="bg-gray-500 px-4 rounded text-lg text-white ">
+                        <h1 className="p-4">{quantity}</h1>
+                        <button
+                          className="bg-gray-500 px-4 rounded text-lg text-white "
+                          onClick={() => setQuantiity((prev) => prev + 1)}
+                        >
                           +
                         </button>
                       </td>
