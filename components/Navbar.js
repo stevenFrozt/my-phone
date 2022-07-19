@@ -160,7 +160,7 @@ export default function Navbar() {
               buy Smart
             </a>
           </Link>
-          <Link href="sell_device">
+          <Link href="repair_device">
             <a
               className={
                 router.pathname == "/repair_device" ? activeNavStyle : unActive
