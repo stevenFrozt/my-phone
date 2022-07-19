@@ -6,12 +6,12 @@ import ServiceCards from "../components/ServiceCards.js"
 
 export default function index() {
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <>
         <Navbar />
 
         {/* MOBILE */}
-        <main className="pt-8 px-4 lg:hidden dark:bg-gray-900">
+        <main className="pt-8 px-4 lg:hidden ">
           {/* title and description */}
           <div className="pb-6">
             <h1 className="font-bold">Sell, Buy or Repair a device</h1>
@@ -26,8 +26,11 @@ export default function index() {
             <div className="grid grid-cols-1 md:gird-cols-2 gap-2">
               <ServiceCards description="SELL A DEVICE" path="sell_device" />
               <ServiceCards description="BUY A DEVICE" path="buy_device" />
-              <ServiceCards description="REPAIR A DEVICE" path="Sell_Device" />
-              <ServiceCards description="Test A DEVICE" path="Sell_Device" />
+              <ServiceCards
+                description="REPAIR A DEVICE"
+                path="repair_device"
+              />
+              <ServiceCards description="Test A DEVICE" path="repair_device" />
 
               {/* <div className="bg-red-500">test</div>
             <div className="bg-red-500">test</div>
@@ -96,9 +99,11 @@ export default function index() {
                     all our gently used devices are certified and undergo a 90
                     point inspection test and are PhoneCheck certified!
                   </p>
-                  <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
-                    Buy Now
-                  </button>
+                  <Link href="repair_device">
+                    <button className="cursor-pointer bg-red-500 text-white text-lg px-8 py-2 rounded-full">
+                      Repair Now
+                    </button>
+                  </Link>
                 </div>
                 <img
                   src="images/sell_smart/brokenLaptop.png"

@@ -106,7 +106,7 @@ export default function buy_product() {
     <div className="dark:bg-gray-900">
       <Navbar />
       <main className="xl:px-20">
-        <div className="p-4 my-4 font-medium lg:text-xl lg:my-8">
+        <div className="p-4 my-4 font-medium lg:text-xl lg:my-8  ">
           <div className="text-xl mb-3">
             <h1>IPHONE 13 PRO MAX</h1>
           </div>

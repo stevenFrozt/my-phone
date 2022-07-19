@@ -70,9 +70,9 @@ export default function repair_type() {
     },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900/100">
       <Navbar />
-      <main className="xl:px-20">
+      <main className="xl:px-20 ">
         <div className="p-4 my-4 font-medium lg:text-xl lg:my-8">
           <h1 className="text-xl mb-6 text-center">
             What&apos;s wrong with your smartphone{" "}
@@ -86,6 +86,6 @@ export default function repair_type() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

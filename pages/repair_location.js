@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "@heroicons/react/outline"
 import Link from "next/link"
 export default function repair_location() {
   return (
-    <>
+    <div className="dark:bg-gray-900/100">
       <Navbar />
       <main className="xl:px-20">
         <div className="p-5 my-4 font-medium lg:text-xl lg:my-8">
@@ -15,7 +15,7 @@ export default function repair_location() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3  gap-5 mb-5">
-            <div className="flex items-center justify-between border-2 rounded-lg p-2">
+            <div className="flex items-center justify-between border-2 dark:bg-slate-800 rounded-lg p-2">
               <div className="ml-1">
                 <h1 className="text-xl mb-2">Carry-In</h1>
                 <h1 className="font-normal">
@@ -29,7 +29,7 @@ export default function repair_location() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between border-2 rounded-lg p-2">
+            <div className="flex items-center justify-between border-2 dark:bg-slate-800 rounded-lg p-2">
               <div className="ml-1">
                 <h1 className="text-xl mb-2">We Come to You</h1>
                 <h1 className="font-normal">
@@ -41,7 +41,7 @@ export default function repair_location() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between border-2 rounded-lg p-2">
+            <div className="flex items-center justify-between  border-2 dark:bg-slate-800 rounded-lg p-2">
               <div className="ml-1">
                 <h1 className="text-xl mb-2">Mail-in Repair</h1>
                 <h1 className="font-normal">
@@ -55,7 +55,7 @@ export default function repair_location() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 justify-evenly text-center bg-[#f1f1f1] text-[#d42828] rounded-lg p-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 justify-evenly text-center bg-[#f1f1f1] dark:bg-gray-500 dark:text-white text-[#d42828] rounded-lg p-10">
             <div className="flex flex-col justify-center items-center">
               <img className="w-16" src="images/icon/protect.png" alt="" />
               <h1>Lifetime warranty</h1>
@@ -76,6 +76,6 @@ export default function repair_location() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

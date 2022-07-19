@@ -9,12 +9,10 @@ import Link from "next/link"
 import { useTheme } from "next-themes"
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme("light")
 
   const [toggleMenu, setToggleMenu] = useState(false)
-  useEffect(() => {
-    setTheme("light")
-  }, [])
+
   const activeNavStyle =
     "border h-24 pt-8 px-4 flex items-center mb-4 bg-red-500 cursor-pointer rounded-xl text-white"
   const unActive = "h-24 pt-8 px-4 flex items-center mb-4  cursor-pointer"
@@ -38,7 +36,7 @@ export default function Navbar() {
     <>
       {/* mobile */}
 
-      <div className="flex fixed bg-white w-full justify-between items-center px-4 py-4  border-b-4 border-b-red-500 lg:hidden dark:bg-gray-900">
+      <div className="flex fixed z-50 bg-white w-full justify-between items-center px-4 py-4  border-b-4 border-b-red-500 lg:hidden dark:bg-gray-900">
         {toggleMenu ? (
           <IoIosClose
             className="text-[1.8rem]"
