@@ -52,8 +52,11 @@ export default function Navbar() {
             }}
           />
         )}
-
-        <img src="images/logo.png" alt="" className="h-8" />
+        {theme == "light" ? (
+          <img src="images/logo.png" alt="" className="h-8" />
+        ) : (
+          <img src="images/logo-dark.png" alt="" className="h-8" />
+        )}
         <Link href="cart">
           <ShoppingCartIcon className="h-4 " />
         </Link>
@@ -132,7 +135,15 @@ export default function Navbar() {
       {/* Desktop */}
 
       <div className="hidden lg:flex items-center justify-between px-20 -mt-2 border-b-red-500 border-b-[20px] dark:bg-gray-900">
-        <img src="images/logoDesktop.png" alt="" className="h-16 mt-4 mr-20" />
+        {theme == "light" ? (
+          <img
+            src="images/logoDesktop.png"
+            alt=""
+            className="h-16 mt-4 mr-20"
+          />
+        ) : (
+          <img src="images/logo-dark.png" alt="" className="h-16 mt-4 mr-20" />
+        )}
         {/* links */}
         <div className="flex items-center space-x-8">
           <Link href="/">
