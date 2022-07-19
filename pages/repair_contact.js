@@ -58,28 +58,48 @@ export default function repair_contact() {
             </div>
           </div>
 
-          <div className="mt-6">
-            <h1>Apoinmentment Time</h1>
-          </div>
-
-          <div className="grid">
-            <div className="flex ">
-              <div className="flex flex-col">
-                <img src="images/icon/appointment.png" alt="" />
-              </div>
-              <h1>Tue, May 11, 2022</h1>
-              <div className="flex flex-col">
-                <h1>12 pm</h1>
+          <div className="grid grid-cols-2 py-8">
+            <div>
+              <h1 className="py-3 text-xl">Apoinmentment Time</h1>
+              <div className="">
+                <div className="flex ">
+                  <div className="flex flex-col">
+                    <img src="images/icon/appointment.png" alt="" />
+                  </div>
+                  <div className="flex flex-col pl-2">
+                    <h1>Tue, May 11, 2022</h1>
+                    <h1>12 pm</h1>
+                    <h1 className="text-[#1178ff] text-xs">Change Time</h1>
+                  </div>
+                </div>   
               </div>
             </div>
+            <div>
+            <h1 className="py-3 text-xl">Repair Location</h1>
+            <div className="">
+              <div className="flex ">
+                <div className="flex flex-col">
+                  <img src="images/icon/location.png" alt="" />
+                </div>
+                <div className="flex flex-col pl-2 text-xs">
+                  <h1>new York -Center City </h1>
+                  <h1>1135 walnut street, #100A Philadelphia, PA, 1265</h1>
+                  <h1 className="text-[#1178ff] text-xs">Change Store</h1>
+                </div>
+              </div>   
+            </div>
           </div>
+          </div>
+          
+       
           <Link href="/">
-            <div className="flex items-center justify-center w-full h-10 bg-[#d42828] rounded-sm my-10 p-2 cursor-pointer">
+            <div className="flex items-center justify-center w-full h-16 bg-[#d42828] rounded-sm my-8 cursor-pointer">
               <a className="text-center text-white">
                 Confirm your repair appointment{" "}
               </a>
             </div>
           </Link>
+          
         </div>
       </main>
       <Footer />
