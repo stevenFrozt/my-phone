@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react"
 
-export default function Carrier({image}) {
+export default function Carrier({ image }) {
   return (
-    
-    <div className="flex flex-col justify-center items-center cursor-pointer">
-        <img
-            src={image}
-            alt=""
-        />
+    <div className="flex flex-col justify-center items-center cursor-pointer dark:bg-white rounded">
+      <img src={image} alt="" />
     </div>
   )
 }

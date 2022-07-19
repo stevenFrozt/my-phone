@@ -104,6 +104,11 @@ export default function buy_product() {
   ]
   return (
     <div className="dark:bg-gray-900">
+      <div className="bg-[#ffffff] hidden" />
+      <div className="bg-[#02cc86] hidden" />
+      <div className="bg-[#ffe67e] hidden" />
+      <div className="bg-[#969696] hidden" />
+
       <Navbar />
       <main className="xl:px-20">
         <div className="p-4 my-4 font-medium lg:text-xl lg:my-8  ">
