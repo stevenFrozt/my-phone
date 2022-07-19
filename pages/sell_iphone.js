@@ -69,7 +69,7 @@ export default function sell_iphone() {
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-2 lg:grid-cols-4 lg:px-40 py-10 dark:bg-gray-900">
+      <div className="grid grid-cols-2 lg:grid-cols-10 lg:px-40 md:grid-cols-6 py-10 dark:bg-gray-900">
         {devices.map((item, index) => (
           <Device
             key={index}
