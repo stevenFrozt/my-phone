@@ -13,9 +13,9 @@ export default function Sell_details() {
   const [front, setFront] = useState()
   const [icloud, setIcloud] = useState()
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Navbar />
-      <main className="lg:flex lg:items-center lg:flex-row-reverse lg:justify-evenly lg:w-[60%] lg:mx-auto dark:bg-gray-900">
+      <main className="lg:flex lg:items-center lg:flex-row-reverse lg:justify-evenly lg:w-[60%] lg:mx-auto ">
         <div className="flex flex-col items-center py-4 lg:scale-150 lg:mt-40 lg:self-start text-center lg:w-[80%]">
           <img
             src="images/sell_smart/IPHONE XS MAX.png"
