@@ -11,7 +11,7 @@ export default function Sell_checkout() {
     <div className="dark:bg-gray-900">
       <Navbar />
       <main>
-        <div className="lg:border rounded-lg mx-8 lg:mx-20 my-16">
+        <div className="lg:border lg:p-20 rounded-lg mx-8 lg:mx-20 my-16">
           {/* nav */}
           <nav className="flex gap-8 justify-center p-4">
             <p
@@ -40,7 +40,7 @@ export default function Sell_checkout() {
                 <table className="my-4  w-full">
                   <thead className="text-center ">
                     <tr className="">
-                      <td>product</td>
+                      <td className="p-4 ">product</td>
                       <td>price</td>
                       <td>qty</td>
                       <td>total</td>
@@ -55,21 +55,25 @@ export default function Sell_checkout() {
                             <div className="hidden lg:block">
                               <h1 className="text-gray-500">
                                 condition:
-                                <span className="text-black pl-1">
+                                <span className="text-black pl-1 dark:text-red-500">
                                   Brand new
                                 </span>
                               </h1>
                               <h1 className="text-gray-500">
                                 Carrier:
-                                <span className="text-black pl-1">locked</span>
+                                <span className="text-black pl-1 dark:text-red-500">
+                                  locked
+                                </span>
                               </h1>
                               <h1 className="text-gray-500">
                                 Storage:
-                                <span className="text-black pl-1">256GB</span>
+                                <span className="text-black pl-1 dark:text-red-500">
+                                  256GB
+                                </span>
                               </h1>
                               <h1 className="text-gray-500">
                                 Phone Status:
-                                <span className="text-black pl-1">
+                                <span className="text-black pl-1 dark:text-red-500">
                                   Financed
                                 </span>
                               </h1>
