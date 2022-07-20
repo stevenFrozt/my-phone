@@ -5,8 +5,19 @@ import Navbar from "../components/Navbar"
 export default function Sell_checkout() {
   const [active, setActive] = useState("cart")
   const [quantity, setQuantiity] = useState(1)
+  const [pay, setPay] = useState()
+  const [ship, setShip] = useState()
+
+  // STYLES CONDITIONAL RENDER
   const activeNav = "border-b-2 border-blue-500 cursor-pointer"
   const unActiveNav = "text-gray-400 cursor-pointer"
+  const activeButton =
+    "cursor-pointer hover:-translate-y-1 transition-all duration-150 border-b-red-500 border-b-2 "
+  const unActiveButton =
+    "cursor-pointer hover:-translate-y-1 transition-all duration-150"
+
+  //==================
+
   return (
     <div className="dark:bg-gray-900">
       <Navbar />
@@ -145,36 +156,72 @@ export default function Sell_checkout() {
                     <div>
                       <h1>How would you like to be paid?</h1>
                       <div className="flex space-x-2 py-2">
-                        <img
-                          src="images/sell_smart/checkout/paypal.png"
-                          alt=""
-                          className="cursor-pointer"
-                        />
-                        <img
-                          src="images/sell_smart/checkout/visa.png"
-                          alt=""
-                          className="cursor-pointer"
-                        />
+                        <div
+                          className={
+                            pay == "paypal" ? activeButton : unActiveButton
+                          }
+                          onClick={() => setPay("paypal")}
+                        >
+                          <img
+                            src="images/sell_smart/checkout/paypal.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div
+                          className={
+                            pay == "visa" ? activeButton : unActiveButton
+                          }
+                          onClick={() => setPay("visa")}
+                        >
+                          <img
+                            src="images/sell_smart/checkout/visa.png"
+                            alt=""
+                          />
+                        </div>
                       </div>
                     </div>
                     <div>
                       <h1>How would you like to ship your Device?</h1>
                       <div className="flex space-x-2 py-2">
-                        <img
-                          src="images/sell_smart/checkout/fedex.png"
-                          alt=""
-                          className="cursor-pointer"
-                        />
-                        <img
-                          src="images/sell_smart/checkout/United-States-P.png "
-                          className="cursor-pointer"
-                          alt=""
-                        />
-                        <img
-                          src="images/sell_smart/checkout/640px-United_Pa.png"
-                          className="cursor-pointer"
-                          alt=""
-                        />
+                        <div
+                          className={
+                            ship === "fedex" ? activeButton : unActiveButton
+                          }
+                        >
+                          <img
+                            src="images/sell_smart/checkout/fedex.png"
+                            alt=""
+                            className="cursor-pointer"
+                            onClick={() => setShip("fedex")}
+                          />
+                        </div>
+                        <div
+                          className={
+                            ship === "us_postalservice"
+                              ? activeButton
+                              : unActiveButton
+                          }
+                        >
+                          <img
+                            src="images/sell_smart/checkout/United-States-P.png "
+                            className="cursor-pointer"
+                            alt=""
+                            onClick={() => setShip("us_postalservice")}
+                          />
+                        </div>
+                        <div
+                          className={
+                            ship === "ups" ? activeButton : unActiveButton
+                          }
+                        >
+                          <img
+                            src="images/sell_smart/checkout/640px-United_Pa.png"
+                            className="cursor-pointer"
+                            alt=""
+                            onClick={() => setShip("ups")}
+                          />
+                        </div>
                       </div>
                     </div>
 
