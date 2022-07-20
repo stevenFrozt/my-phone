@@ -12,6 +12,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme("light")
 
   const [toggleMenu, setToggleMenu] = useState(false)
+  console.log(theme)
 
   const activeNavStyle =
     "border h-24 pt-8 px-4 flex items-center mb-4 bg-red-500 cursor-pointer rounded-xl text-white"
@@ -52,11 +53,15 @@ export default function Navbar() {
             }}
           />
         )}
-        {theme == "light" ? (
-          <img src="images/logo.png" alt="" className="h-8" />
-        ) : (
-          <img src="images/logo-dark.png" alt="" className="h-8" />
-        )}
+
+        <img src="images/logo.png" alt="" className="h-8 dark:hidden " />
+
+        <img
+          src="images/logo-dark.png"
+          alt=""
+          className="h-8 dark:block hidden"
+        />
+
         <Link href="cart">
           <ShoppingCartIcon className="h-4 " />
         </Link>
@@ -135,15 +140,18 @@ export default function Navbar() {
       {/* Desktop */}
 
       <div className="hidden lg:flex items-center justify-between px-20 -mt-2 border-b-red-500 border-b-[20px] dark:bg-gray-900">
-        {theme == "light" ? (
-          <img
-            src="images/logoDesktop.png"
-            alt=""
-            className="h-16 mt-4 mr-20"
-          />
-        ) : (
-          <img src="images/logo-dark.png" alt="" className="h-16 mt-4 mr-20" />
-        )}
+        <img
+          src="images/logoDesktop.png"
+          alt=""
+          className="h-16 mt-4 mr-20 dark:hidden"
+        />
+
+        <img
+          src="images/logo-dark.png"
+          alt=""
+          className="h-16 mt-4 mr-20 dark:block hidden"
+        />
+
         {/* links */}
         <div className="flex items-center space-x-8">
           <Link href="/">
