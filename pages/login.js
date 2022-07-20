@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
@@ -25,20 +26,22 @@ export default function login() {
                 className="border-b block w-full my-4 px-1 outline-0"
               />
               <div className="flex justify-end">
-                <span className="text-blue-500 font-medium">
+                <span className="text-blue-500 font-medium cursor-pointer hover:scale-95 transition-all duration-100">
                   Forgot password?
                 </span>
               </div>
             </div>
 
-            <button className="bg-red-500 px-4 py-2 text-white w-full rounded my-4">
+            <button className="bg-red-500 px-4 py-2 hover:bg-red-600 text-white w-full rounded my-4">
               Login
             </button>
             <hr />
             <h1 className="py-4 text-sm text-center">
               Not registered yet?{" "}
-              <span className="text-blue-500 font-medium">
-                <a href="/register">Creat an Account</a>
+              <span className="text-blue-500 font-medium hover:scale-95 hover:text-red-500 hover:text-[.8rem] transition-all duration-100">
+                <Link href="register">
+                  <a>Create an Account</a>
+                </Link>
               </span>
             </h1>
           </form>

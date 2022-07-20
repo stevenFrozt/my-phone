@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
@@ -69,13 +70,17 @@ export default function register() {
                 className="border-b block w-full my-4 lg:p-4 py-2 px-1"
               />
             </div>
-            <button className="bg-red-500 px-4 py-2 text-white w-full rounded my-4">
+            <button className="bg-red-500 px-4 py-2 hover:bg-red-600 text-white w-full rounded my-4">
               Register
             </button>
             <hr />
             <h1 className="py-4 text-sm text-center">
               already have an account?{" "}
-              <span className="text-blue-500 font-medium">Login now</span>
+              <Link href="login">
+                <span className="text-blue-500 font-medium cursor-pointer">
+                  Login now
+                </span>
+              </Link>
             </h1>
           </form>
         </div>
