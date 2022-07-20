@@ -1,35 +1,43 @@
-import React from "react"
+import React, { useState } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Carrier from "../components/Carrier"
 import DeviceCondition from "../components/DeviceCondition"
 import DeviceColor from "../components/DeviceColor"
 import DeviceRelated from "../components/DeviceRelated"
-export default function buy_product() {
+export default function Buy_product() {
   const carries = [
     {
       image: "/images/carrier/unlocked.png",
+      name: "unlocked",
     },
     {
       image: "/images/carrier/g12.png",
+      name: "metro",
     },
     {
       image: "/images/carrier/at.png",
+      name: "at&t",
     },
     {
       image: "/images/carrier/bost.png",
+      name: "boost",
     },
     {
       image: "/images/carrier/Sprint_C.png",
+      name: "sprint",
     },
     {
       image: "/images/carrier/Cricket_Wireles.png",
+      name: "cricket",
     },
     {
       image: "/images/carrier/verizon.png",
+      name: "verizon",
     },
     {
       image: "/images/carrier/tmobile.png",
+      name: "tmobile",
     },
   ]
 
@@ -102,6 +110,11 @@ export default function buy_product() {
       price: "$5000",
     },
   ]
+
+  const [carrier, setCarrier] = useState("")
+  const [condition, setCondition] = useState("")
+  const [storage, setStorage] = useState("")
+  const [color, setColor] = useState("")
   return (
     <div className="dark:bg-gray-900">
       <div className="bg-[#ffffff] hidden" />
@@ -121,27 +134,51 @@ export default function buy_product() {
               <h1>Carrier</h1>
               <div className="grid grid-cols-4 gap-4 py-3 h-15">
                 {carries.map((item, index) => (
-                  <Carrier key={index} image={item.image} />
+                  <Carrier
+                    key={index}
+                    image={item.image}
+                    name={item.name}
+                    isActive={carrier}
+                    setActive={setCarrier}
+                  />
                 ))}
               </div>
               <h1>Condition</h1>
               <div className="grid grid-cols-3 gap-4 py-3">
                 {conditions.map((item, index) => (
-                  <DeviceCondition key={index} name={item.name} />
+                  <DeviceCondition
+                    key={index}
+                    name={item.name}
+                    isCondition={true}
+                    condition={condition}
+                    setCondition={setCondition}
+                  />
                 ))}
               </div>
 
               <h1>Storage</h1>
               <div className="grid grid-cols-4 gap-4 py-3">
                 {storages.map((item, index) => (
-                  <DeviceCondition key={index} name={item.name} />
+                  <DeviceCondition
+                    key={index}
+                    isCondition={false}
+                    storageName={item.name}
+                    name={item.name}
+                    storage={storage}
+                    setStorage={setStorage}
+                  />
                 ))}
               </div>
 
               <h1>Color</h1>
-              <div className="flex flex-wrap gap-3 py-3 ">
+              <div className="flex flex-wrap gap-3 py-3 items-center">
                 {colors.map((item, index) => (
-                  <DeviceColor key={index} name={item.name} />
+                  <DeviceColor
+                    key={index}
+                    name={item.name}
+                    color={color}
+                    setColor={setColor}
+                  />
                 ))}
               </div>
             </div>
