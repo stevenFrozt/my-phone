@@ -22,7 +22,7 @@ export default function Sell_checkout() {
     <div className="dark:bg-gray-900">
       <Navbar />
       <main>
-        <div className="lg:border lg:p-20 rounded-lg mx-8 lg:mx-20 my-16">
+        <div className="lg:border lg:p-20 rounded-lg mx-8 lg:mx-20 lg:my-16 my-2">
           {/* nav */}
           <nav className="flex gap-8 justify-center p-4">
             <p

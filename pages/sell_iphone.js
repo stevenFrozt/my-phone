@@ -132,9 +132,12 @@ export default function sell_iphone() {
     // { name: "Iphone 6  ", image: "images/buy_smart/iphones/", path: "" },
   ]
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <Navbar />
-      <div className="grid grid-cols-2 lg:grid-cols-10 lg:px-40 md:grid-cols-6 py-10 dark:bg-gray-900">
+      <div className="flex justify-center items-center py-4 text-lg font-medium lg:text-2xl lg:hidden">
+        <h1>IPHONE PRODUCTS</h1>
+      </div>
+      <div className="grid grid-cols-4 lg:grid-cols-10 lg:px-40 py-4 lg:py-10 md:grid-cols-6">
         {devices.map((item, index) => (
           <Device
             key={index}
@@ -146,6 +149,6 @@ export default function sell_iphone() {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }

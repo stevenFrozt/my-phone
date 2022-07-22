@@ -179,7 +179,10 @@ export default function ipone() {
   return (
     <div className="dark:bg-gray-900">
       <Navbar />
-      <div className="grid grid-cols-2 lg:grid-cols-10 lg:px-40 py-10 ">
+      <div className="flex justify-center items-center py-4 text-lg font-medium lg:text-2xl lg:hidden">
+        <h1>IPHONE PRODUCTS</h1>
+      </div>
+      <div className="grid grid-cols-4 lg:grid-cols-10 lg:px-40 py-4 lg:py-10 md:grid-cols-6">
         {devices.map((item, index) => (
           <Device
             key={index}

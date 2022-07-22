@@ -16,24 +16,26 @@ export default function Sell_details() {
     <div className="dark:bg-gray-900">
       <Navbar />
       <main className="lg:flex lg:items-center lg:flex-row-reverse lg:justify-evenly lg:w-[60%] lg:mx-auto ">
-        <div className="flex flex-col items-center py-4 lg:scale-150 lg:mt-40 lg:self-start text-center lg:w-[80%]">
+        <div className="flex flex-row-reverse items-center justify-center py-1  lg:mt-40 lg:self-start text-center lg:w-[80%] lg:flex-col z-0">
           <img
             src="images/sell_smart/IPHONE XS MAX.png"
             alt=""
-            className="h-[150px]"
+            className="h-[100px] lg:h-[200px] hover:scale-105 transition-all duration-200 ease-in"
           />
-          <h1 className="mt-4">YOUR DEVICE VALUE</h1>
-          <h1>$1,020.00</h1>
+          <div>
+            <h1 className="mt-4">YOUR DEVICE VALUE</h1>
+            <h1>$1,020.00</h1>
+          </div>
+          <h1 className="lg:pt-4 lg:text-[1rem] lg:font-bold">
+            Iphone 13 PRO MAX
+          </h1>
         </div>
 
         {/* Details */}
-        <div className="px-2 w-full">
-          <h1 className="lg:pt-20 lg:text-[2rem] lg:font-bold">
-            Iphone 13 PRO MAX
-          </h1>
-          <div className="pt-4">
-            <h3 className="py-2">CONDITION</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
+        <div className="px-2 w-full lg:pt-20 z-10">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg ">CONDITION</h3>
+            <div className="grid-cols-3 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
               <GradientButton
                 text="Brand New"
                 setToggle={setCondition}
@@ -61,9 +63,9 @@ export default function Sell_details() {
               />
             </div>
           </div>
-          <div className="pt-4">
-            <h3 className="py-2">CARRIER</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg">CARRIER</h3>
+            <div className="grid-cols-3 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
               <GradientButton
                 text="UNLOCKED"
                 setToggle={setCarrier}
@@ -76,9 +78,9 @@ export default function Sell_details() {
               />
             </div>
           </div>
-          <div className="pt-4">
-            <h3 className="py-2">STORAGE</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg">STORAGE</h3>
+            <div className="grid-cols-3 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
               <GradientButton
                 text="128GB"
                 setToggle={setStorage}
@@ -101,9 +103,9 @@ export default function Sell_details() {
               />
             </div>
           </div>
-          <div className="pt-4">
-            <h3 className="py-2">PHONE STATUS</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-3 lg:py-1 lg:w-full">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg">PHONE STATUS</h3>
+            <div className="grid-cols-2 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-3 lg:py-1 lg:w-full text-sm ">
               <GradientButton
                 text="NO LOCKS"
                 setToggle={setPhone}
@@ -126,23 +128,29 @@ export default function Sell_details() {
               />
             </div>
           </div>
-          <div className="pt-4">
-            <h3 className="py-2">ARE THERE ANY CRACKS/CHIPS ON THE BACK?</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg">
+              ARE THERE ANY CRACKS/CHIPS ON THE BACK?
+            </h3>
+            <div className="grid-cols-3 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
               <GradientButton text="YES" setToggle={setBack} toggle={back} />
               <GradientButton text="NO" setToggle={setBack} toggle={back} />
             </div>
           </div>
-          <div className="pt-4">
-            <h3 className="py-2">ANY CRACKS/CHIPS ON FRONT SCREEN?</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg">
+              ANY CRACKS/CHIPS ON FRONT SCREEN?
+            </h3>
+            <div className="grid-cols-3 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
               <GradientButton text="YES" setToggle={setFront} toggle={front} />
               <GradientButton text="NO" setToggle={setFront} toggle={front} />
             </div>
           </div>
-          <div className="pt-4">
-            <h3 className="py-2">IS YOUR ICLOUD TURNED OFF?</h3>
-            <div className="grid-cols-3 grid gap-y-4 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
+          <div className="">
+            <h3 className="text-sm py-1 lg:text-lg">
+              IS YOUR ICLOUD TURNED OFF?
+            </h3>
+            <div className="grid-cols-3 grid gap-y-1 gap-x-2 lg:gap-x-1 lg:grid-cols-5 lg:py-1 lg:w-full">
               <GradientButton
                 text="YES"
                 setToggle={setIcloud}
