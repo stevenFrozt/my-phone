@@ -9,7 +9,7 @@ export default function DeviceCondition({
   setStorage,
 }) {
   const active =
-    "flex flex-col justify-center items-center cursor-pointer border-2 rounded py-1 dark:border-red-500 dark:bg-slate-800 border-red-500 dark:hover:bg-slate-600 "
+    "flex flex-col justify-center items-center cursor-pointer border-2 rounded py-1 dark:border-red-500 dark:bg-slate-800 border-red-500 lg:dark:hover:bg-slate-600 "
   const unActive =
     "flex flex-col justify-center items-center cursor-pointer border-2 rounded py-1 dark:border-none dark:bg-slate-800 dark:hover:bg-slate-600"
   return (

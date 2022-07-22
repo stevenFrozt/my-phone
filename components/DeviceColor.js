@@ -8,7 +8,6 @@ export default function DeveiceColor({ name, color, setColor }) {
       className=" cursor-pointer"
       onClick={() => {
         setColor(name)
-        console.log(name)
       }}
     >
       <div className={color == name ? active : unActive}> </div>
