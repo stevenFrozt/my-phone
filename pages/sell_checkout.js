@@ -298,6 +298,12 @@ export default function Sell_checkout() {
                           create an account
                         </label>
                       </div>
+                      <div
+                        className="flex justify-center bg-red-500 text-white mt-20 py-2 rounded cursor-pointer  text-xl"
+                        onClick={() => setActive("confirmation")}
+                      >
+                        <button>next</button>
+                      </div>
                     </form>
                   </div>
 
