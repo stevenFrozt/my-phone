@@ -28,7 +28,7 @@ export default function index() {
               <ServiceCards description="BUY A DEVICE" path="buy_device" />
               <ServiceCards
                 description="REPAIR A DEVICE"
-                path="repair_device"
+                path="repair_d  evice"
               />
               <ServiceCards description="Test A DEVICE" path="repair_device" />
 
