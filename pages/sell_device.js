@@ -7,18 +7,19 @@ export default function Sell_Device() {
   const devices = [
     {
       name: "Iphone",
-      image: "/images/sell_smart/IPHONE XS.png",
+      image: "/images/client/Buy-iPhone_notext.jpg",
       path: "sell_iphone",
     },
-    { name: "samsung", image: "/images/sell_smart/SAMSUNG GALAXY .png" },
-    { name: "smart watch", image: "/images/sell_smart/APPLE WATCH SER.png" },
-    { name: "airpods", image: "/images/sell_smart/AIRPODS PROS.png" },
-    { name: "ipade", image: "/images/sell_smart/ipad pro 12.9 4.png" },
-    { name: "Macbook", image: "/images/sell_smart/macbook-air-201.png" },
-    { name: "consol", image: "/images/sell_smart/NINTENDO SWITCH.png" },
+    { name: "samsung", image: "/images/client/Buy-Samsung_notext.jpg" },
+    { name: "smart watch", image: "/images/client/Buy-Watch_notext.jpg" },
+    { name: "airpods", image: "/images/client/Buy-AirPods_notext.jpg" },
+    { name: "ipad", image: "/images/client/Buy-iPad_notext.jpg" },
+    { name: "Macbook", image: "/images/client/Buy-Mac_notext.jpg" },
+    { name: "console", image: "/images/client/Buy-GameConsoles_notext.jpg" },
+
     {
       name: "Featured Products",
-      image: "/images/sell_smart/IPHONE XS MAX.png",
+      image: "/images/client/ShopFeatured_notext.jpg",
     },
   ]
   return (
@@ -26,7 +27,7 @@ export default function Sell_Device() {
       <Navbar />
       {/* MOBILE */}
       <main className="lg:px-20 ">
-        <div className="p-4 py-6 text-center font-medium lg:text-xl lg:my-8">
+        <div className="p-4 my-4  text-center font-medium lg:text-2xl lg:my-8">
           <h1 className="">Select your device to get started</h1>
           <h1>Sell your Device</h1>
         </div>

@@ -12,7 +12,6 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme("light")
 
   const [toggleMenu, setToggleMenu] = useState(false)
-  console.log(theme)
 
   const activeNavStyle =
     "border h-24 pt-8 px-4 flex items-center mb-4 bg-red-500 cursor-pointer rounded-xl text-white"

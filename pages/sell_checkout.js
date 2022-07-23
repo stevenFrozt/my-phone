@@ -285,10 +285,15 @@ export default function Sell_checkout() {
                         />
                       </div>
                       <div className="flex items-center">
-                        <input type="checkbox" name="account" id="" />
+                        <input
+                          type="checkbox"
+                          name="account"
+                          id="account"
+                          className="cursor-pointer"
+                        />
                         <label
                           htmlFor="account"
-                          className="flex items-center mb-1 ml-2"
+                          className="flex items-center mb-1 ml-2 cursor-pointer"
                         >
                           create an account
                         </label>
@@ -387,10 +392,15 @@ export default function Sell_checkout() {
                   <hr className="my-4" />
                 </div>
                 <div className="flex items-center px-4">
-                  <input type="checkbox" name="account" id="account" />
+                  <input
+                    type="checkbox"
+                    name="account"
+                    id="account"
+                    className="cursor-pointer"
+                  />
                   <label
                     htmlFor="account"
-                    className="flex items-center mb-1 ml-2"
+                    className="flex items-center mb-1 ml-2 cursor-pointer"
                   >
                     Term and policy
                   </label>
