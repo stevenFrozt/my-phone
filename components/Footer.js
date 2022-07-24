@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import { FaFacebookF, FaInstagram } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { useTheme } from "next-themes"
 
 export default function Footer() {
@@ -39,6 +39,11 @@ export default function Footer() {
             <Link href="https://instagram.com">
               <a>
                 <FaInstagram className="h-5" />
+              </a>
+            </Link>
+            <Link href="https://whatsapp.com">
+              <a>
+                <FaWhatsapp className="h-5" />
               </a>
             </Link>
           </div>
@@ -85,6 +90,11 @@ export default function Footer() {
           <Link href="https://instagram.com">
             <a>
               <FaInstagram className="h-5 hover:-translate-y-1 transition duration-100" />
+            </a>
+          </Link>
+          <Link href="https://whatsapp.com">
+            <a>
+              <FaWhatsapp className="h-5 hover:-translate-y-1 transition duration-100" />
             </a>
           </Link>
         </div>
