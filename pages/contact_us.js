@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 export default function contact_us() {
   return (
+    
     <div className="dark:bg-gray-900">
       <Navbar />
       <main>
