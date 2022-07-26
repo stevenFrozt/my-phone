@@ -112,6 +112,14 @@ export default function Navbar() {
                 test your Smart
               </a>
             </Link>
+            <Link href="contact_us">
+              <a
+                className="py-8 text-lg"
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
+                Contact Us
+              </a>
+            </Link>
             <a
               className=" py-8 text-lg flex items-center justify-center"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -194,6 +202,15 @@ export default function Navbar() {
               }
             >
               test your Smart
+            </a>
+          </Link>
+          <Link href="contact_us">
+            <a
+              className={
+                router.pathname == "/contact_us" ? activeNavStyle : unActive
+              }
+            >
+              Contact Us
             </a>
           </Link>
           <div className="flex space-x-8 pl-14 items-center">
