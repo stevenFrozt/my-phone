@@ -170,7 +170,7 @@ export default function Navbar() {
           <Link href="sell_device">
             <a
               className={
-                router.pathname == "/sell_device" ? activeNavStyle : unActive
+                router.pathname.includes("sell") ? activeNavStyle : unActive
               }
             >
               sell Smart
@@ -180,7 +180,7 @@ export default function Navbar() {
           <Link href="buy_device">
             <a
               className={
-                router.pathname == "/buy_device" ? activeNavStyle : unActive
+                router.pathname.includes("buy") ? activeNavStyle : unActive
               }
             >
               buy Smart
@@ -189,7 +189,7 @@ export default function Navbar() {
           <Link href="repair_device">
             <a
               className={
-                router.pathname == "/repair_device" ? activeNavStyle : unActive
+                router.pathname.includes("repair") ? activeNavStyle : unActive
               }
             >
               repair Smart
