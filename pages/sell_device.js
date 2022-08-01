@@ -6,26 +6,54 @@ import Navbar from "../components/Navbar"
 export default function Sell_Device() {
   const devices = [
     {
-      name: "Iphone",
+      name: "iPhone",
       image: "/images/client/Buy-iPhone_notext.jpg",
-      path: "sell_iphone",
+      path: "sell_iphone"
     },
-    { name: "samsung", image: "/images/client/Buy-Samsung_notext.jpg" },
-    { name: "smart watch", image: "/images/client/Buy-Watch_notext.jpg" },
-    { name: "airpods", image: "/images/client/Buy-AirPods_notext.jpg" },
-    { name: "ipad", image: "/images/client/Buy-iPad_notext.jpg" },
-    { name: "Macbook", image: "/images/client/Buy-Mac_notext.jpg" },
-    { name: "console", image: "/images/client/Buy-GameConsoles_notext.jpg" },
+    {
+      name: "samsung",
+      image: "/images/client/Buy-Samsung_notext.jpg",
+      path: "sell_samsung"
+    },
+    {
+      name: "smart watch",
+      image: "/images/client/Buy-Watch_notext.jpg",
+      path: "sell_watch"
+    },
+    {
+      name: "iPod",
+      image: "/images/client/ipod.jpg",
+      path: "sell_ipod"
+    },
+    {
+      name: "airpods",
+      image: "/images/client/Buy-AirPods_notext.jpg",
+      path: "sell_airpods"
+    },
+    {
+      name: "iPad",
+      image: "/images/client/Buy-iPad_notext.jpg",
+      path: "sell_ipad"
+    },
+    {
+      name: "Macbook",
+      image: "/images/client/Buy-Mac_notext.jpg",
+      path: "sell_macbook"
+    },
+    {
+      name: "game console",
+      image: "/images/client/Buy-GameConsoles_notext.jpg",
+      path: "sell_console"
+    },
 
     {
       name: "Featured Products",
-      image: "/images/client/ShopFeatured_notext.jpg",
-    },
+      image: "/images/client/ShopFeatured_notext.jpg"
+    }
   ]
   return (
     <div className="dark:bg-gray-900">
       <Navbar />
-      {/* MOBILE */}
       <main className="lg:px-20 ">
         <div className="p-4 my-4  text-center font-medium lg:text-2xl lg:my-8">
           <h1 className="">Select your device to get started</h1>
